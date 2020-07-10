@@ -14,7 +14,7 @@ class PersonSpider(scrapy.Spider):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # initialize tor manager when starting the spider
-        self.cm = ConnectionManager('891vnp505')
+        self.cm = ConnectionManager('password')
 
     def start_requests(self):
         _count_req = 0
